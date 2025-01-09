@@ -1,0 +1,41 @@
+
+<app-navbar></app-navbar>
+
+<div class="seat-selection-container">
+
+
+  <label for="seatCount">Seats to Book:</label>
+  <input type="number" id="seatCount" [(ngModel)]="totalSeats" min="1" /><br>
+  <div class="controls">
+    <button (click)="autoSelectSeats()">Auto Select</button><br>
+    <button (click)="bookSeats()">Book Seats</button><br>
+    <button (click)="resetSeats()">Reset</button><br>
+    <button (click)="cancelSelection()">Cancel Selection</button>
+  </div>
+
+  <div class="seating-chart">
+    <div *ngFor="let row of seatingChart" class="row">
+      <span class="row-label">{{ row.rowName }}</span>
+      <span
+        *ngFor="let seat of row.seats"
+        [class]="getSeatClass(seat)"
+        (click)="toggleSeatSelection(seat)"
+      >
+        {{ seat.name }}
+      </span>
+    </div>
+  </div>
+
+  <div class="selected-seats">
+    <h3>Selected Seats:</h3>
+    <ul>
+      <li *ngFor="let seat of selectedSeats">{{ seat.name }} ({{ seat.type }})</li>
+    </ul>
+  </div>
+</div>
+
+
+<footer>
+  <p>&copy; 2025 Theater Booking. All rights reserved.</p>
+</footer>
+

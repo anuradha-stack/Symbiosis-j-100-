@@ -1,0 +1,517 @@
+Navbar Styles
+.navbar {
+  background-color:white;
+  padding: 20px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: blue;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-links a {
+  color: blue;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: inline-block;
+ 
+}
+
+.navbar-links a:hover {
+  
+  border-radius: 5px;
+}
+Rest of your styles 
+
+body {
+
+  background-color: #0900b8b6;
+  color: rgb(245, 228, 228);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 60px; /* To avoid overlap with navbar */
+}
+
+.seat-selection-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  border-radius: 6px;
+  
+}
+
+.seating-chart .row {
+  margin: 3px 5;
+}
+
+.seating-chart .row-label {
+  display: inline-block;
+  width: 50px;
+}
+
+.seating-chart span {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.seating-chart .available {
+  background-color: #76c7c0;
+}
+
+.seating-chart .selected {
+  background-color: #2a4bd0;
+}
+
+.seating-chart .booked {
+  background-color:rgb(203, 30, 30);
+}
+
+.seating-chart span:hover:not(.booked) {
+  transform: scale(1.2);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.selected-seats {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #025e0a;
+  color: rgb(30, 27, 27);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #30e418;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color:white;
+}
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Header Logo */
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Welcome Section */
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .content p {
+    color: #555;
+    font-size: 18px;
+  }/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Header Logo */
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Welcome Section */
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .content p {
+    color: #555;
+    font-size: 18px;
+  }/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Header Logo */
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Welcome Section */
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .content p {
+    color: #555;
+    font-size: 18px;
+  }
+/* Navbar Styles 
+.navbar {
+  background-color: white;
+  padding: 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #007bff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar-links a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 16px;
+  display: inline-block;
+}
+
+.navbar-links a:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/* Main Styles 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 60px; /* To avoid overlap with navbar 
+}
+
+.seat-selection-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 50px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seating-chart .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.seating-chart .row-label {
+  width: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.seating-chart span {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.seating-chart .available {
+  background-color: #28a745;
+  color: white;
+}
+
+.seating-chart .selected {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.seating-chart .booked {
+  background-color: #dc3545;
+  color: white;
+}
+
+.seating-chart span:hover:not(.booked) {
+  transform: scale(1.2);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.controls input,
+.controls button {
+  margin: 5px;
+}
+
+.selected-seats {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #343a40;
+}
+*/
